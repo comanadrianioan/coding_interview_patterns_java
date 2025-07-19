@@ -2,13 +2,14 @@ package com.bytebytego.patterns.twoPointer.inwardTraversal;
 
 import java.util.List;
 
+/**
+ * Given an array of integers sorted in ascending order and a target value, return the indexes of any pair of numbers
+ * in the array that sums to the target. The order of the indexes in the result doesn't matter. If no pair is found,
+ * return an empty array.
+ */
 public class PairSumSorted {
 
-	public static void main(String[] args) {
-		System.out.println(pairSumSortedBruteForce(List.of(-5, -2, 3, 4, 6), 7));
-	}
-
-	/*
+	/**
 	 * Time complexity: O(n^2)
 	 */
 	public static List<Integer> pairSumSortedBruteForce(List<Integer> nums, int target) {
@@ -23,7 +24,7 @@ public class PairSumSorted {
 		return List.of();
 	}
 
-	/*
+	/**
 	 * Time complexity: O(n)
 	 */
 	public static List<Integer> pairSumSorted(List<Integer> nums, int target) {
