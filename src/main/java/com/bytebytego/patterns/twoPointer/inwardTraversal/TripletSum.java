@@ -1,10 +1,8 @@
 package com.bytebytego.patterns.twoPointer.inwardTraversal;
 
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.HashSet;
 import java.util.List;
-import java.util.Objects;
 import java.util.Set;
 import java.util.stream.Stream;
 
@@ -14,10 +12,6 @@ import java.util.stream.Stream;
  * return an empty array.
  */
 public class TripletSum {
-
-	public static void main(String[] args) {
-		System.out.println(tripletSum(new ArrayList<>(List.of(0, -1, 2, -3, 1))));
-	}
 
 	public static List<List<Integer>> tripletSumBruteForce(List<Integer> nums) {
 		int length = nums.size();
