@@ -14,7 +14,7 @@ public class PairSumSorted {
 	 */
 	public static List<Integer> pairSumSortedBruteForce(List<Integer> nums, int target) {
 		int length = nums.size();
-		for (int i = 0; i < length - 1; i++) {
+		for (int i = 0; i < length; i++) {
 			for (int j = i + 1; j < length; j++) {
 				if (nums.get(i) + nums.get(j) == target) {
 					return List.of(i, j);
