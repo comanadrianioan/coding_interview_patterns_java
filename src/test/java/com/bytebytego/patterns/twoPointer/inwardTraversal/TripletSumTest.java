@@ -15,7 +15,7 @@ class TripletSumTest {
 	@DisplayName("Triple Sum")
 	@ParameterizedTest(name = "Input List ={0}, Expected Result={1}")
 	@MethodSource("tripletSumTestCases")
-	void pairSumSorted(List<Integer> nums, List<List<Integer>> expectedResult) {
+	void tripletSum(List<Integer> nums, List<List<Integer>> expectedResult) {
 		assertEquals(expectedResult, TripletSum.tripletSum(nums));
 	}
 
