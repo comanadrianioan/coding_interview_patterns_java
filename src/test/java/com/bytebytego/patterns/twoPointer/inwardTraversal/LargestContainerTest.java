@@ -19,7 +19,7 @@ class LargestContainerTest {
 		assertEquals(expectedResult, LargestContainer.largestContainer(input));
 	}
 
-	public static Stream<Arguments> largestContainerTestCases() {
+	private static Stream<Arguments> largestContainerTestCases() {
 		return Stream.of(
 				Arguments.of(List.of(), 0),
 				Arguments.of(List.of(1), 0),

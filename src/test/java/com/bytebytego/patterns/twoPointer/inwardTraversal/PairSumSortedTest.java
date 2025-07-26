@@ -19,7 +19,7 @@ class PairSumSortedTest {
 		assertEquals(expectedResult, (PairSumSorted.pairSumSorted(nums, target)));
 	}
 
-	public static Stream<Arguments> pairSumTestCases() {
+	private static Stream<Arguments> pairSumTestCases() {
 		return Stream.of(
 				Arguments.of(List.of(), 0, List.of()),
 				Arguments.of(List.of(1), 1, List.of()),

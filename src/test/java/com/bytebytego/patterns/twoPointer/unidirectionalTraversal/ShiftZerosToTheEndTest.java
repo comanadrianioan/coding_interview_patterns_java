@@ -12,7 +12,7 @@ import org.junit.jupiter.params.provider.MethodSource;
 class ShiftZerosToTheEndTest {
 
 	@DisplayName("Shift Zeros To The End")
-	@ParameterizedTest(name = "Input {0}, expected max water {1}")
+	@ParameterizedTest(name = "Input array {0}, expected output array {1}")
 	@MethodSource("shiftZerosToTheEndTestCases")
 	void shiftZerosToTheEnd(int[] nums, int[] tagetNums) {
 		int[] output = ShiftZerosToTheEnd.shiftZerosToTheEnd(nums);
@@ -23,7 +23,7 @@ class ShiftZerosToTheEndTest {
 		}
 	}
 
-	public static Stream<Arguments> shiftZerosToTheEndTestCases() {
+	private static Stream<Arguments> shiftZerosToTheEndTestCases() {
 		return Stream.of(
 				Arguments.of(new int[]{}, new int[]{}),
 				Arguments.of(new int[]{0}, new int[]{0}),

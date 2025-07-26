@@ -33,6 +33,9 @@ public class TripletSum {
 		return new ArrayList<>(triplets);
 	}
 
+	/**
+	 * Time complexity: O(n^2)
+	 */
 	public static List<List<Integer>> tripletSum(List<Integer> nums) {
 		List<List<Integer>> triplets = new ArrayList<>();
 		List<Integer> sortedNums = nums.stream().sorted().toList();

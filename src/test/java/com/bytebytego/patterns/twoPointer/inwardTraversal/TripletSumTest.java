@@ -19,7 +19,7 @@ class TripletSumTest {
 		assertEquals(expectedResult, TripletSum.tripletSum(nums));
 	}
 
-	public static Stream<Arguments> tripletSumTestCases() {
+	private static Stream<Arguments> tripletSumTestCases() {
 		return Stream.of(
 				Arguments.of(List.of(), List.of()),
 				Arguments.of(List.of(0), List.of()),

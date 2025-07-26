@@ -20,6 +20,9 @@ public class LargestContainer {
 		return maxWater;
 	}
 
+	/**
+	 * Time complexity: O(n)
+	 */
 	public static int largestContainer(List<Integer> heights) {
 		int left = 0, right = heights.size() - 1;
 		int maxWater = 0;

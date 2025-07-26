@@ -1,5 +1,7 @@
 package com.bytebytego.patterns.twoPointer.inwardTraversal;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 import java.util.stream.Stream;
 
 import org.junit.jupiter.api.DisplayName;
@@ -13,9 +15,10 @@ class IsPalindromeValidTest {
 	@ParameterizedTest(name = "Input string \"{0}\" should return {1}")
 	@MethodSource("isPalindromeTestCases")
 	void isPalindrome(String input, boolean expectedResult) {
+		assertEquals(expectedResult, IsPalindromeValid.isPalindrome(input));
 	}
 
-	public static Stream<Arguments> isPalindromeTestCases() {
+	private static Stream<Arguments> isPalindromeTestCases() {
 		return Stream.of(
 				Arguments.of("", true),
 				Arguments.of("a", true),

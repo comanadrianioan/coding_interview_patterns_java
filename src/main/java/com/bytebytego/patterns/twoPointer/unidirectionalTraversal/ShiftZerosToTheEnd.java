@@ -35,6 +35,9 @@ public class ShiftZerosToTheEnd {
 		return nums;
 	}
 
+	/**
+	 * Time complexity: O(n)
+	 */
 	public static int[] shiftZerosToTheEnd(int[] nums) {
 		int left = 0, right = 0;
 		for(int i = 0; i < nums.length; i++) {
