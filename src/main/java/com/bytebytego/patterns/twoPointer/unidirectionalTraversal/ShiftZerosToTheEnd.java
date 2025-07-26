@@ -1,7 +1,5 @@
 package com.bytebytego.patterns.twoPointer.unidirectionalTraversal;
 
-import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 /**
@@ -9,11 +7,6 @@ import java.util.List;
  * order of non-zero elements,
  */
 public class ShiftZerosToTheEnd {
-
-	public static void main(String[] args) {
-		System.out.println(shiftZerosToTheEndNaive(new ArrayList<>(List.of(0, 1, 0, 3, 2))));
-		System.out.println(Arrays.toString(shiftZerosToTheEndNaive(new int[]{0, 1, 0, 3, 2})));
-	}
 
 	public static List<Integer> shiftZerosToTheEndNaive(List<Integer> nums) {
 		List<Integer> nonZero = nums.stream().filter(num -> num != 0).toList();
@@ -43,6 +36,20 @@ public class ShiftZerosToTheEnd {
 	}
 
 	public static int[] shiftZerosToTheEnd(int[] nums) {
-		// ToDo :: implement shitZerosToTheEnd
+		int left = 0, right = 0;
+		for(int i = 0; i < nums.length; i++) {
+			if (nums[right] != 0) {
+				swap(nums, left, right);
+				left++;
+			}
+			right++;
+		}
+		return nums;
+	}
+
+	private static void swap(int[] nums, int leftIdx, int rightIdx) {
+		int temp = nums[leftIdx];
+		nums[leftIdx] = nums[rightIdx];
+		nums[rightIdx] = temp;
 	}
 }
