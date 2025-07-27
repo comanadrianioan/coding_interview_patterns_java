@@ -1,4 +1,4 @@
-package com.bytebytego.patterns.hashMapsAndSets.hashMaps;
+package com.bytebytego.patterns.hashMapsAndSets.hashSets;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
