@@ -26,3 +26,18 @@ The goal of this project is to systematically solve and document solutions to pr
 | Problem | Description | Solution | Test |
 |---------|-------------|----------|------|
 | **Move Zeros** | Move all zeros to the end while maintaining the relative order of non-zero elements | [Solution](src/main/java/com/bytebytego/patterns/twoPointer/unidirectionalTraversal/ShiftZerosToTheEnd.java) | [Test](src/test/java/com/bytebytego/patterns/twoPointer/unidirectionalTraversal/ShiftZerosToTheEndTest.java) |
+
+### <ins>Hash Maps and Sets Pattern</ins>
+
+#### 🗺️ Hash Maps
+| Problem | Description | Solution | Test |
+|---------|-------------|----------|------|
+| **Geometric Sequence Triplets** | Find count of geometric sequence triplets with a given common ratio | [Solution](src/main/java/com/bytebytego/patterns/hashMapsAndSets/hashMaps/GeometricSequenceTriplets.java) | [Test](src/test/java/com/bytebytego/patterns/hashMapsAndSets/hashMaps/GeometricSequenceTripletsTest.java) |
+| **Two Sum - Unsorted Array** | Given an unsorted array and a target value, return indexes of any pair that sums to the target | [Solution](src/main/java/com/bytebytego/patterns/hashMapsAndSets/hashMaps/PairSumUnsorted.java) | [Test](src/test/java/com/bytebytego/patterns/hashMapsAndSets/hashMaps/PairSumUnsortedTest.java) |
+
+#### 🔢 Hash Sets
+| Problem                          | Description | Solution | Test |
+|----------------------------------|-------------|----------|------|
+| **Longest Consecutive Sequence** | Find the longest chain of consecutive numbers in an array | [Solution](src/main/java/com/bytebytego/patterns/hashMapsAndSets/hashSets/LongestChainOfConsecutiveNumbers.java) | [Test](src/test/java/com/bytebytego/patterns/hashMapsAndSets/hashSets/LongestChainOfConsecutiveNumbersTest.java) |
+| **Valid Sudoku**                 | Determine if a partially completed 9x9 Sudoku board is valid | [Solution](src/main/java/com/bytebytego/patterns/hashMapsAndSets/hashSets/VerifySudokuBoard.java) | [Test](src/test/java/com/bytebytego/patterns/hashMapsAndSets/hashSets/VerifySudokuBoardTest.java) |
+| **Zero Stripping**               | For each zero in a matrix, set its entire row and column to zero in place | [Solution](src/main/java/com/bytebytego/patterns/hashMapsAndSets/hashSets/ZeroStriping.java) | [Test](src/test/java/com/bytebytego/patterns/hashMapsAndSets/hashSets/ZeroStripingTest.java) |
