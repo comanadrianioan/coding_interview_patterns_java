@@ -20,7 +20,7 @@ class VerifySudokuBoardTest {
 		assertEquals(isValid, VerifySudokuBoard.verifySudokuBoard(board));
 	}
 
-	public static Stream<Arguments> verifySudokuBoardTestCases() {
+	private static Stream<Arguments> verifySudokuBoardTestCases() {
 		return Stream.of(
 				// ✅ Valid board: Empty board
 				Arguments.of(new int[9][9], true),

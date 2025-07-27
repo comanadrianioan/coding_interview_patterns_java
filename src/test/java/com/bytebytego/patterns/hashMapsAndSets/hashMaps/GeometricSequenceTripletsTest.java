@@ -21,7 +21,7 @@ class GeometricSequenceTripletsTest {
 	}
 
 
-	public static Stream<Arguments> geometricSequenceTripletsTestCases() {
+	private static Stream<Arguments> geometricSequenceTripletsTestCases() {
 		return Stream.of(
 				Arguments.of(new int[]{1, 2, 2, 4}, 2, 2),
 				Arguments.of(new int[]{1, 3, 9, 9, 27, 81}, 3, 6),
