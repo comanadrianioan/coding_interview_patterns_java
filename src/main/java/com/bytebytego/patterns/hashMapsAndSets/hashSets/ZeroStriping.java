@@ -7,24 +7,6 @@ import java.util.HashSet;
  */
 public class ZeroStriping {
 
-	public static void main(String[] args) {
-		int[][] matrix = new int[][]{
-				{1, 2, 3, 4, 5},
-				{6, 0, 8, 9, 1},
-				{11, 12, 13, 14, 15},
-				{16, 17, 18, 19, 0}
-		};
-
-		zeroStriping(matrix);
-
-		for (int[] ints : matrix) {
-			for (int column = 0; column < matrix[0].length; column++) {
-				System.out.print(ints[column] + " ");
-			}
-			System.out.println();
-		}
-	}
-
 	public static void zeroStripingHashSet(int[][] matrix) {
 		HashSet<Integer> zeroRows = new HashSet<>();
 		HashSet<Integer> zeroColumns = new HashSet<>();
