@@ -7,12 +7,6 @@ import com.bytebytego.patterns.linkedLists.ListNode;
  */
 public class RemoveKthLastNode {
 
-	public static void main(String[] args) {
-		ListNode listNode = ListNode.of(1, 2, 4, 7, 3);
-		System.out.println(listNode);
-		System.out.println(removeKthLastNode(listNode, 2));
-	}
-
 	public static ListNode removeKthLastNode(ListNode head, int k) {
 		ListNode dummy = ListNode.of(-1);
 		dummy.setNext(head);

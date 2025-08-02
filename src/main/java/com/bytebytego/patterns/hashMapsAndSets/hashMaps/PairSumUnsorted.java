@@ -13,10 +13,6 @@ import java.util.stream.IntStream;
  */
 public class PairSumUnsorted {
 
-	public static void main(String[] args) {
-		System.out.println(pairSumUnsorted(List.of(-1, 3, 4 , 2), 3));
-	}
-
 	public static List<Integer> pairSumUnsortedTwoPass(List<Integer> nums, int target) {
 		Map<Integer, Integer> numMap = IntStream.range(0, nums.size())
 				.boxed()

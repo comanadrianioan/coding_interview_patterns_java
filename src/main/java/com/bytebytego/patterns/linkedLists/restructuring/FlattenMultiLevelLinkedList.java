@@ -11,7 +11,7 @@ import com.bytebytego.patterns.linkedLists.MultiLevelListNode;
  * of the next one.
  */
 public class FlattenMultiLevelLinkedList {
-	
+
 	/**
 	 * Time complexity: O(n)
 	 */
