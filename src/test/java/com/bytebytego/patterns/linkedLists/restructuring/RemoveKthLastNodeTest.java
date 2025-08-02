@@ -14,13 +14,13 @@ class RemoveKthLastNodeTest {
 
 	@DisplayName("Remove K^th Last Node")
 	@ParameterizedTest(name = "Test Case #{index}")
-	@MethodSource("removeKthLastNodeCases")
+	@MethodSource("removeKthLastNodeTestCases")
 	void removeKthLastNode(ListNode input, int k, ListNode expected) {
 		ListNode result = RemoveKthLastNode.removeKthLastNode(input, k);
 		assertEquals(expected, result);
 	}
 
-	static Stream<Arguments> removeKthLastNodeCases() {
+	static Stream<Arguments> removeKthLastNodeTestCases() {
 		return Stream.of(
 			Arguments.of(
 				ListNode.of(1, 2, 4, 7, 3),
